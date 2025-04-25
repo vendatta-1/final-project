@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <component name="VcsDirectoryMappings" defaultProject="true" />
+=======
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+  </component>
+>>>>>>> 7c8cc89 (Initial Create)
+=======
+  <component name="VcsDirectoryMappings" defaultProject="true" />
+>>>>>>> 78a9e695b69bd92f993e1353d4dd18eea1de8632
+</project>

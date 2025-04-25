@@ -1,0 +1,57 @@
+2025-04-23 05:10:41.860 | INFO     | src.main:<module>:13 - API started
+2025-04-23 05:11:56.507 | INFO     | src.main:<module>:13 - API started
+2025-04-23 05:14:41.179 | ERROR    | src.services.Service:predict:54 - Error inserting report into DB: (sqlite3.IntegrityError) datatype mismatch
+[SQL: INSERT INTO reports (id, filename, format, received_time, model_time_seconds, body_part, confidence, prediction, fracture_confidence, error) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('9eee709b-eb3a-40aa-be0b-3f4ad9785be4', 'img.png', 'image/png', '2025-04-23 05:12:37.675572', 88.5733, 'XR_FINGER', 0.9243399500846863, 'No Fracture', 0.4260196089744568, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-04-23 05:19:46.873 | INFO     | src.main:<module>:13 - API started
+2025-04-23 05:21:23.491 | INFO     | src.main:<module>:13 - API started
+2025-04-23 05:32:58.319 | INFO     | src.main:<module>:13 - API started
+2025-04-23 05:33:17.879 | ERROR    | src.services.Service:predict:54 - Error inserting report into DB: (sqlite3.IntegrityError) datatype mismatch
+[SQL: INSERT INTO reports (id, filename, format, received_time, model_time_seconds, body_part, confidence, prediction, fracture_confidence, error) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('4fea75ef-834d-47ea-a8eb-63b0873d61b0', 'img.png', 'image/png', '2025-04-23 05:33:07.441159', 10.073059, 'XR_FINGER', 0.9243399500846863, 'No Fracture', 0.4260196089744568, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-04-23 05:35:25.350 | INFO     | src.main:<module>:13 - API started
+2025-04-23 05:35:34.107 | ERROR    | src.services.Service:predict:54 - Error inserting report into DB: (sqlite3.IntegrityError) datatype mismatch
+[SQL: INSERT INTO reports (id, filename, format, received_time, model_time_seconds, body_part, confidence, prediction, fracture_confidence, error) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('3a0138dc-5e41-486a-b05d-3a82033769fe', 'img.png', 'image/png', '2025-04-23 05:35:25.451261', 8.650711, 'XR_FINGER', 0.9243399500846863, 'No Fracture', 0.4260196089744568, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-04-23 05:36:45.757 | INFO     | src.main:<module>:13 - API started
+2025-04-23 05:52:39.611 | INFO     | src.main:<module>:13 - API started
+2025-04-23 05:54:14.322 | INFO     | src.services.Service:predict:51 - Report created: 0081d86b-a812-4750-b2b2-c8795f93615f
+2025-04-23 05:58:41.675 | INFO     | src.main:<module>:13 - API started
+2025-04-23 06:00:01.258 | INFO     | src.main:<module>:13 - API started
+2025-04-23 06:00:39.862 | INFO     | src.services.Service:predict:51 - Report created: e349dafe-da37-4dc8-a67d-b9de3ba24350
+2025-04-23 06:01:52.390 | INFO     | src.main:<module>:13 - API started
+2025-04-23 06:02:37.325 | INFO     | src.services.Service:predict:52 - Report created: cfc8d15f-d725-4eb3-999e-fd09ee097023
+2025-04-23 06:02:55.364 | ERROR    | src.services.Service:predict:55 - Error inserting report into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "reports_pkey"
+DETAIL:  Key (id)=(cfc8d15f-d725-4eb3-999e-fd09ee097023) already exists.
+
+[SQL: INSERT INTO reports (id, filename, format, received_time, model_time_seconds, body_part, confidence, prediction, fracture_confidence, error) VALUES (%(id)s::UUID, %(filename)s, %(format)s, %(received_time)s, %(model_time_seconds)s, %(body_part)s, %(confidence)s, %(prediction)s, %(fracture_confidence)s, %(error)s)]
+[parameters: {'id': UUID('cfc8d15f-d725-4eb3-999e-fd09ee097023'), 'filename': 'img.png', 'format': 'image/png', 'received_time': datetime.datetime(2025, 4, 23, 6, 2, 54, 718364), 'model_time_seconds': 0.637647, 'body_part': 'XR_FINGER', 'confidence': 0.9243399500846863, 'prediction': 'No Fracture', 'fracture_confidence': 0.4260196089744568, 'error': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-04-23 06:03:32.245 | ERROR    | src.services.Service:predict:55 - Error inserting report into DB: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "reports_pkey"
+DETAIL:  Key (id)=(cfc8d15f-d725-4eb3-999e-fd09ee097023) already exists.
+
+[SQL: INSERT INTO reports (id, filename, format, received_time, model_time_seconds, body_part, confidence, prediction, fracture_confidence, error) VALUES (%(id)s::UUID, %(filename)s, %(format)s, %(received_time)s, %(model_time_seconds)s, %(body_part)s, %(confidence)s, %(prediction)s, %(fracture_confidence)s, %(error)s)]
+[parameters: {'id': UUID('cfc8d15f-d725-4eb3-999e-fd09ee097023'), 'filename': 'img.png', 'format': 'image/png', 'received_time': datetime.datetime(2025, 4, 23, 6, 3, 31, 791810), 'model_time_seconds': 0.448273, 'body_part': 'XR_FINGER', 'confidence': 0.9243399500846863, 'prediction': 'No Fracture', 'fracture_confidence': 0.4260196089744568, 'error': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-04-23 06:06:31.656 | INFO     | src.main:<module>:13 - API started
+2025-04-23 06:08:09.207 | INFO     | src.main:<module>:13 - API started
+2025-04-23 06:09:15.968 | INFO     | src.services.Service:predict:52 - Report created: e076a413-fdf6-45f1-8013-01f1c2551d2f
+2025-04-23 06:09:30.076 | INFO     | src.services.Service:predict:52 - Report created: 867d58b3-860d-418e-a494-2662eb70587b
+2025-04-23 06:09:46.208 | INFO     | src.services.Service:predict:52 - Report created: f2fac7f5-7b6c-41c0-99ad-4417aa608610
+2025-04-23 06:13:29.921 | INFO     | src.main:<module>:19 - API started
+2025-04-23 06:15:01.069 | INFO     | src.main:<module>:19 - API started
+2025-04-23 06:15:13.493 | INFO     | src.services.Service:predict:52 - Report created: e5d555e3-8d87-47a9-863c-2fa384ccb5ce
+2025-04-23 06:15:30.171 | INFO     | src.services.Service:predict:52 - Report created: 6b42a6ea-a41b-47e6-a22d-85811698a237
+2025-04-23 06:15:32.202 | INFO     | src.services.Service:predict:52 - Report created: 176d174f-6a4c-4a98-820c-f86cfa2737f9
+2025-04-23 06:15:33.506 | INFO     | src.services.Service:predict:52 - Report created: 8e494994-92a0-4bb2-aaa7-542a7f41eec5
+2025-04-23 06:15:34.651 | INFO     | src.services.Service:predict:52 - Report created: e7589b3d-3812-4d34-afee-027f80a4a7b2
+2025-04-23 06:15:35.810 | INFO     | src.services.Service:predict:52 - Report created: 805f5c90-5e40-47f9-948b-06f720deb4ac
+2025-04-23 06:15:36.858 | INFO     | src.services.Service:predict:52 - Report created: fdfaacb7-b139-4490-b5af-b509c08196df
+2025-04-24 18:35:02.140 | INFO     | src.main:<module>:19 - API started
+2025-04-24 18:35:42.905 | INFO     | src.services.Service:predict:52 - Report created: cc6d496b-f8c7-4bf5-ab7f-b1422acab20f
+2025-04-24 18:37:38.666 | INFO     | src.services.Service:predict:52 - Report created: fb7291ed-ab27-4f1e-b25c-d97ee68db0e0
+2025-04-24 18:37:42.589 | INFO     | src.services.Service:predict:52 - Report created: 396a8fec-7a02-46a0-8c0e-cc1b716d9e91
+2025-04-24 18:37:45.829 | INFO     | src.services.Service:predict:52 - Report created: bd7659dd-c18f-4a4e-bc43-c26d594fa5b5

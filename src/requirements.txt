@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+tensorflow
+numpy
+sqlalchemy
+alembic 
+pillow
+opencv-python         
+scikit-learn
+loguru            
+psycopg2-binary
+python-multipart
+
