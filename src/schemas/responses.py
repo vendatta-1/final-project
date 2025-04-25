@@ -5,8 +5,8 @@ from datetime import datetime
 
 class ReportCreate(BaseModel):
     id: Optional[str] = None
-    filename: str
-    format: str
+    filename:Optional[ str] =None
+    format:Optional[ str]=None
     received_time: datetime
     model_time_seconds: float
     body_part: str
