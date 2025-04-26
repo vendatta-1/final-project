@@ -55,3 +55,126 @@ DETAIL:  Key (id)=(cfc8d15f-d725-4eb3-999e-fd09ee097023) already exists.
 2025-04-24 18:37:38.666 | INFO     | src.services.Service:predict:52 - Report created: fb7291ed-ab27-4f1e-b25c-d97ee68db0e0
 2025-04-24 18:37:42.589 | INFO     | src.services.Service:predict:52 - Report created: 396a8fec-7a02-46a0-8c0e-cc1b716d9e91
 2025-04-24 18:37:45.829 | INFO     | src.services.Service:predict:52 - Report created: bd7659dd-c18f-4a4e-bc43-c26d594fa5b5
+2025-04-26 06:54:33.099 | INFO     | src.main:<module>:19 - API started
+2025-04-26 06:55:16.091 | INFO     | src.services.Service:predict:52 - Report created: 194bb604-4fd1-450a-9e4c-cda53ff8e57a
+2025-04-26 06:55:23.179 | INFO     | src.services.Service:predict:52 - Report created: 0480f5fb-99be-4910-b7a7-aa7d21bb3824
+2025-04-26 06:55:25.908 | INFO     | src.services.Service:predict:52 - Report created: e6abec9b-2054-4bce-85bf-2db0a0c4845a
+2025-04-26 06:55:28.846 | INFO     | src.services.Service:predict:52 - Report created: 630e13a1-8065-40ab-98d9-cb2969c50310
+2025-04-26 06:59:58.274 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:03:21.007 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:04:43.771 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:05:06.921 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:05:24.174 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:06:16.548 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:09:39.113 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:10:34.674 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:12:24.122 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:14:31.737 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:14:52.532 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:14:57.095 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:15:00.848 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:15:54.915 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:15:54.933 | ERROR    | src.services.Service:predict:61 - [PREDICT] Internal error: 'function' object has no attribute 'add'
+2025-04-26 08:18:22.240 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:19:33.525 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:19:38.002 | ERROR    | src.services.Service:predict:61 - [PREDICT] Internal error: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $4: datetime.datetime(2025, 4, 26, 5, 19, 37... (can't subtract offset-naive and offset-aware datetimes)
+[SQL: INSERT INTO reports (id, filename, format, received_time, model_time_seconds, body_part, confidence, prediction, fracture_confidence, error, status) VALUES ($1::UUID, $2::VARCHAR, $3::VARCHAR, $4::TIMESTAMP WITHOUT TIME ZONE, $5::FLOAT, $6::VARCHAR, $7::FLOAT, $8::VARCHAR, $9::FLOAT, $10::VARCHAR, $11::VARCHAR)]
+[parameters: (UUID('a6e8aff6-909e-4529-9ba6-44c4ca8a09ac'), 'img.png', 'image/png', datetime.datetime(2025, 4, 26, 5, 19, 37, 980911, tzinfo=datetime.timezone.utc), 0.0, '', None, '', None, None, 'In Progress')]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2025-04-26 08:21:49.343 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:21:49.410 | INFO     | src.services.Service:process_report:70 - [PROCESS] Starting image preprocessing for report c88faeb2-2511-4632-99dc-5107b42d4687
+2025-04-26 08:21:49.789 | ERROR    | src.services.Service:process_report:104 - [PROCESS] Error processing report c88faeb2-2511-4632-99dc-5107b42d4687: I/O operation on closed file.
+2025-04-26 08:23:50.646 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:25:20.034 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:26:20.521 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:27:21.539 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:28:53.730 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:30:12.115 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:32:42.728 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:33:56.244 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:36:46.010 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:37:30.411 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:39:14.291 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:47:03.917 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:47:50.553 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:48:30.741 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:48:39.096 | ERROR    | src.services.Service:get_report:128 - Error Select.filter_by() takes 1 positional argument but 2 were given
+2025-04-26 08:51:11.631 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:51:57.164 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:52:03.892 | ERROR    | src.services.Service:get_report:128 - Error Select.filter_by() takes 1 positional argument but 2 were given
+2025-04-26 08:52:11.557 | ERROR    | src.services.Service:get_report:128 - Error Select.filter_by() takes 1 positional argument but 2 were given
+2025-04-26 08:53:08.035 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:53:12.017 | ERROR    | src.services.Service:get_report:128 - Error 6 validation errors for ReportCreate
+received_time
+  Field required [type=missing, input_value=<sqlalchemy.sql.selectabl...bject at 0x731782419310>, input_type=Select]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+model_time_seconds
+  Field required [type=missing, input_value=<sqlalchemy.sql.selectabl...bject at 0x731782419310>, input_type=Select]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+body_part
+  Field required [type=missing, input_value=<sqlalchemy.sql.selectabl...bject at 0x731782419310>, input_type=Select]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+confidence
+  Field required [type=missing, input_value=<sqlalchemy.sql.selectabl...bject at 0x731782419310>, input_type=Select]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+prediction
+  Field required [type=missing, input_value=<sqlalchemy.sql.selectabl...bject at 0x731782419310>, input_type=Select]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+status
+  Field required [type=missing, input_value=<sqlalchemy.sql.selectabl...bject at 0x731782419310>, input_type=Select]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-04-26 08:54:56.586 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:55:24.554 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:55:24.590 | ERROR    | src.services.Service:get_report:142 - Error 1 validation error for ReportCreate
+id
+  Input should be a valid string [type=string_type, input_value=UUID('6b42a6ea-a41b-47e6-a22d-85811698a237'), input_type=UUID]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-04-26 08:56:30.206 | INFO     | src.main:<module>:19 - API started
+2025-04-26 08:56:46.450 | INFO     | src.services.Service:process_report:72 - [PROCESS] Starting image preprocessing for report 308c0993-4b99-4615-94d9-d77cd0bfc8b5
+2025-04-26 08:56:46.470 | ERROR    | src.services.Service:process_report:106 - [PROCESS] Error processing report 308c0993-4b99-4615-94d9-d77cd0bfc8b5: I/O operation on closed file.
+2025-04-26 08:59:57.267 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:00:49.650 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:01:52.395 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:02:02.721 | ERROR    | src.services.Service:predict:65 - [PREDICT] Internal error: 'coroutine' object is not subscriptable
+2025-04-26 09:03:03.882 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:03:46.225 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:04:28.454 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:07:57.281 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:08:02.508 | ERROR    | src.services.Service:predict:76 - [PREDICT] Internal error: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $4: datetime.datetime(2025, 4, 26, 6, 8, 2, ... (can't subtract offset-naive and offset-aware datetimes)
+[SQL: INSERT INTO reports (id, filename, format, received_time, model_time_seconds, body_part, confidence, prediction, fracture_confidence, error, status) VALUES ($1::UUID, $2::VARCHAR, $3::VARCHAR, $4::TIMESTAMP WITHOUT TIME ZONE, $5::FLOAT, $6::VARCHAR, $7::FLOAT, $8::VARCHAR, $9::FLOAT, $10::VARCHAR, $11::VARCHAR)]
+[parameters: (UUID('99152f61-489c-4c76-8883-7b02d8eb35dd'), 'img.png', 'image/png', datetime.datetime(2025, 4, 26, 6, 8, 2, 482327, tzinfo=datetime.timezone.utc), 0.0, '', None, '', None, None, 'In Progress')]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2025-04-26 09:08:26.771 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:08:26.842 | INFO     | src.services.Service:process_report:90 - [PROCESS] Processing 56336 bytes for report 9aa095a9-0fa3-452b-ab09-65c9631d14c2
+2025-04-26 09:08:27.237 | ERROR    | src.services.Service:process_report:129 - [PROCESS] Error processing report 9aa095a9-0fa3-452b-ab09-65c9631d14c2: object bytes can't be used in 'await' expression
+2025-04-26 09:09:49.651 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:10:28.822 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:13:22.322 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:13:34.451 | INFO     | src.services.Service:process_report:90 - [PROCESS] Processing 56336 bytes for report d2e3a1af-1d63-4225-bff5-efa6eb9f11b3
+2025-04-26 09:13:34.802 | ERROR    | src.services.Service:process_report:129 - [PROCESS] Error processing report d2e3a1af-1d63-4225-bff5-efa6eb9f11b3: Image preprocessing failed: a bytes-like object is required, not '_io.BytesIO'
+2025-04-26 09:16:25.576 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:16:35.842 | INFO     | src.services.Service:process_report:90 - [PROCESS] Processing 56336 bytes for report 8984695a-d605-4c5e-9759-fe89729ae7f7
+2025-04-26 09:16:35.843 | ERROR    | src.services.Service:process_report:129 - [PROCESS] Error processing report 8984695a-d605-4c5e-9759-fe89729ae7f7: a bytes-like object is required, not '_io.BytesIO'
+2025-04-26 09:20:27.409 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:20:39.483 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:20:45.579 | INFO     | src.services.Service:process_report:90 - [PROCESS] Processing 56336 bytes for report 27ea3a36-b864-49ad-b55f-78f1225f38d4
+2025-04-26 09:20:47.367 | WARNING  | src.services.Service:retry_async:142 - [RETRY] Attempt 1/3 failed: Input 0 of layer "functional" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 224, 3)
+2025-04-26 09:20:48.425 | WARNING  | src.services.Service:retry_async:142 - [RETRY] Attempt 2/3 failed: Input 0 of layer "functional" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 224, 3)
+2025-04-26 09:20:50.465 | WARNING  | src.services.Service:retry_async:142 - [RETRY] Attempt 3/3 failed: Input 0 of layer "functional" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 224, 3)
+2025-04-26 09:20:50.466 | ERROR    | src.services.Service:process_report:127 - [PROCESS] Error processing report 27ea3a36-b864-49ad-b55f-78f1225f38d4: Body part classification failed. Final error: Input 0 of layer "functional" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 224, 3)
+2025-04-26 09:21:56.191 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:22:11.950 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:22:49.750 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:23:18.648 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:23:24.633 | WARNING  | src.services.Service:retry_async:135 - [RETRY] Attempt 1/3 failed: [Errno 2] Unable to synchronously open file (unable to open file: name = '/run/media/ashry/New Volume/hugging-face/final-models/src/ai_models/ResNet50_FINGER_frac.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+2025-04-26 09:23:25.636 | WARNING  | src.services.Service:retry_async:135 - [RETRY] Attempt 2/3 failed: [Errno 2] Unable to synchronously open file (unable to open file: name = '/run/media/ashry/New Volume/hugging-face/final-models/src/ai_models/ResNet50_FINGER_frac.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+2025-04-26 09:23:27.639 | WARNING  | src.services.Service:retry_async:135 - [RETRY] Attempt 3/3 failed: [Errno 2] Unable to synchronously open file (unable to open file: name = '/run/media/ashry/New Volume/hugging-face/final-models/src/ai_models/ResNet50_FINGER_frac.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+2025-04-26 09:23:27.639 | ERROR    | src.services.Service:process_report:120 - [PROCESS] Error processing report 14cca929-9d07-49e4-a9ae-b12060cd8f6e: Fracture prediction failed. Final error: [Errno 2] Unable to synchronously open file (unable to open file: name = '/run/media/ashry/New Volume/hugging-face/final-models/src/ai_models/ResNet50_FINGER_frac.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+2025-04-26 09:25:06.045 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:25:12.950 | INFO     | src.services.Service:process_report:117 - [PROCESS] Completed report ea5e2807-a56d-40c2-9df9-74a09cb9172a
+2025-04-26 09:31:37.563 | INFO     | src.services.Service:process_report:117 - [PROCESS] Completed report a007d879-804b-4e09-af16-4488fef931d7
+2025-04-26 09:34:40.638 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:35:05.322 | INFO     | src.services.Service:process_report:126 - [PROCESS] Completed report 34ff8729-d3c4-4fd0-b6f3-fdb8663c94e2
+2025-04-26 09:35:23.428 | INFO     | src.services.Service:process_report:126 - [PROCESS] Completed report c3fb7100-2334-42d5-8814-6be90122c744
+2025-04-26 09:37:09.734 | INFO     | src.main:<module>:19 - API started
+2025-04-26 09:37:14.749 | INFO     | src.main:<module>:19 - API started

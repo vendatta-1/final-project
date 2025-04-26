@@ -20,6 +20,6 @@ logger.log("INFO", "API started")
 
 @app.get("/",include_in_schema=False)
 async def root():
-    RedirectResponse(url="/api/v1/swagger")
+    return RedirectResponse(url="/api/v1/swagger")
 
 app.include_router(ModelRoutes().router)

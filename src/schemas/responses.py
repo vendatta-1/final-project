@@ -1,10 +1,10 @@
 from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
-
+from uuid import UUID
 
 class ReportCreate(BaseModel):
-    id: Optional[str] = None
+    id: Optional[UUID] = None
     filename:Optional[ str] =None
     format:Optional[ str]=None
     received_time: datetime
@@ -14,6 +14,7 @@ class ReportCreate(BaseModel):
     prediction: str
     fracture_confidence: Optional[float] = None
     error: Optional[str] = None
+    status: Optional[str]
 
     class Config:
         from_attributes = True

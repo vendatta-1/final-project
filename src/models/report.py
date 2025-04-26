@@ -16,3 +16,4 @@ class Report(Base):
     prediction = Column(String, nullable=False)
     fracture_confidence = Column(Float, nullable=True)
     error = Column(String, nullable=True)
+    status = Column(String, default='In Progress') 
