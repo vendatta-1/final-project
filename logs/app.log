@@ -178,3 +178,19 @@ id
 2025-04-26 09:35:23.428 | INFO     | src.services.Service:process_report:126 - [PROCESS] Completed report c3fb7100-2334-42d5-8814-6be90122c744
 2025-04-26 09:37:09.734 | INFO     | src.main:<module>:19 - API started
 2025-04-26 09:37:14.749 | INFO     | src.main:<module>:19 - API started
+2025-04-26 10:34:13.662 | INFO     | src.main:<module>:19 - API started
+2025-04-26 10:34:24.805 | ERROR    | src.services.Service:predict:82 - [PREDICT] Internal error: password authentication failed for user "postgres"
+2025-04-26 10:38:48.112 | INFO     | src.main:<module>:19 - API started
+2025-04-26 10:39:03.020 | ERROR    | src.services.Service:predict:82 - [PREDICT] Internal error: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedColumnError'>: column "model_time_seconds" of relation "reports" does not exist
+[SQL: INSERT INTO reports (id, filename, format, received_time, model_time_seconds, body_part, confidence, prediction, fracture_confidence, error, status) VALUES ($1::UUID, $2::VARCHAR, $3::VARCHAR, $4::TIMESTAMP WITHOUT TIME ZONE, $5::FLOAT, $6::VARCHAR, $7::FLOAT, $8::VARCHAR, $9::FLOAT, $10::VARCHAR, $11::VARCHAR)]
+[parameters: (UUID('6252123c-0e21-41cf-b399-2a2be60b2132'), 'img.png', 'image/png', datetime.datetime(2025, 4, 26, 10, 38, 58, 711724), 0.0, '', None, '', None, None, 'In Progress')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-26 10:43:51.680 | INFO     | src.main:<module>:19 - API started
+2025-04-26 10:44:01.323 | ERROR    | src.services.Service:predict:82 - [PREDICT] Internal error: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedColumnError'>: column "fracture_confidence" of relation "reports" does not exist
+[SQL: INSERT INTO reports (id, filename, format, received_time, model_time_seconds, body_part, confidence, prediction, fracture_confidence, error, status) VALUES ($1::UUID, $2::VARCHAR, $3::VARCHAR, $4::TIMESTAMP WITHOUT TIME ZONE, $5::FLOAT, $6::VARCHAR, $7::FLOAT, $8::VARCHAR, $9::FLOAT, $10::VARCHAR, $11::VARCHAR)]
+[parameters: (UUID('1204119d-991f-46db-bfce-30ba16e5ced6'), 'img.png', 'image/png', datetime.datetime(2025, 4, 26, 10, 43, 56, 129177), 0.0, '', None, '', None, None, 'In Progress')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-26 10:45:03.645 | INFO     | src.main:<module>:19 - API started
+2025-04-26 10:45:14.664 | ERROR    | src.services.Service:predict:82 - [PREDICT] Internal error: Unknown PG numeric type: 25
+2025-04-26 11:09:04.000 | INFO     | src.main:<module>:19 - API started
+2025-04-26 11:10:11.369 | INFO     | src.main:<module>:19 - API started

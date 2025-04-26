@@ -39,7 +39,7 @@ from contextlib import asynccontextmanager
 # Use asyncpg or psycopg async driver
 DATABASE_URL = os.getenv(
     "DATABASE_URL", 
-    "postgresql+asyncpg://finalproj:finalproj@localhost:5432/finaldb"
+    "postgresql+asyncpg://postgres:tPZbWbzZLswoNhxDVqRtuODeeClrCkmm@yamabiko.proxy.rlwy.net:32737/railway"
 )
 
 # Create async engine
