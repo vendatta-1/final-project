@@ -33,14 +33,16 @@
 
 import os
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, AsyncSession
+
 from sqlalchemy.orm import declarative_base
 from contextlib import asynccontextmanager
-
+from sqlalchemy import create_engine
 # Use asyncpg or psycopg async driver
 DATABASE_URL = os.getenv(
     "DATABASE_URL", 
     "postgresql+asyncpg://postgres:tPZbWbzZLswoNhxDVqRtuODeeClrCkmm@yamabiko.proxy.rlwy.net:32737/railway"
 )
+
 
 # Create async engine
 engine = create_async_engine(DATABASE_URL, echo=True)

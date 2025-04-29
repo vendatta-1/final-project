@@ -1,3 +1,5 @@
 2025-04-23 16:43:21.915 | INFO     | src.main:<module>:19 - API started
 2025-04-23 16:43:59.348 | INFO     | src.services.Service:predict:52 - Report created: c6c687ca-f0b1-42ea-bf6c-1a81abcbac3c
 2025-04-23 16:44:23.943 | INFO     | src.services.Service:predict:52 - Report created: a52b9c5c-444a-40fb-b45e-ba47a71eb48d
+2025-04-29 09:31:06.470 | INFO     | __main__:<module>:19 - API started
+2025-04-29 09:32:03.577 | INFO     | __main__:<module>:19 - API started
