@@ -6,7 +6,7 @@ from fastapi import UploadFile, BackgroundTasks
 from fastapi.responses import JSONResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
-from fastapi.encoders import jsonable_encoder  # Import jsonable_encoder
+from fastapi.encoders import jsonable_encoder  
 
 from typing import List, Optional
 

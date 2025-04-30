@@ -6,7 +6,7 @@ from  src.logger import logger
 app = FastAPI(
     redoc_url=None,
     docs_url="/swagger",
-    root_path="/v1/api/",
+    root_path="/v1/api",
     openapi_url="/openapi.json",
 )
 app.add_middleware(
