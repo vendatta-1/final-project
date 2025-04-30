@@ -6,7 +6,7 @@ from  src.logger import logger
 app = FastAPI(
     redoc_url=None,
     docs_url="/swagger",
-    root_path="/api/v1",
+    root_path="/v1/api/",
     openapi_url="/openapi.json",
 )
 app.add_middleware(
@@ -20,6 +20,6 @@ logger.log("INFO", "API started")
 
 @app.get("/",include_in_schema=False)
 async def root():
-    return RedirectResponse(url="/api/v1/swagger")
+    return RedirectResponse(url="/v1/api/swagger")
 
 app.include_router(ModelRoutes().router)

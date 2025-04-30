@@ -43,4 +43,4 @@ class FracturePredictor:
     def predict(self, image, body_part: str):
         model = self._load_model(body_part)
         prob = float(model.predict(image, verbose=0)[0][0])
-        return ("Fracture" if prob > 0.5 else "No Fracture", prob)
+        return "Fracture" if prob > 0.5 else "No Fracture", prob
