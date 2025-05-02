@@ -5,7 +5,7 @@ from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 
-from src.routes import MedicalImageAnalysisRoutes, HealthRoutes, StatisticsRoutes
+from src.routes import MedicalImageAnalysisRoutes, create_health_router, StatisticsRoutes
 from src.logger import logger
 
 from src.limiters import limiter
@@ -40,6 +40,6 @@ async def root():
     return RedirectResponse(url="/v1/api/swagger")
  
 app.include_router(MedicalImageAnalysisRoutes().router)
-app.include_router(HealthRoutes().router)
+app.include_router(create_health_router())
 app.include_router(StatisticsRoutes().router)
 
