@@ -1,3 +1,174 @@
 2025-05-01 00:48:15.934 | INFO     | src.main:<module>:19 - API started
 2025-05-01 00:51:07.828 | INFO     | src.main:<module>:19 - API started
 2025-05-01 00:55:52.920 | INFO     | src.main:<module>:19 - API started
+2025-05-01 11:51:52.778 | INFO     | src.main:<module>:19 - API started
+2025-05-01 11:52:19.573 | ERROR    | src.services.Service:predict:43 - [PREDICT] [Errno 101] Network is unreachable
+2025-05-02 02:25:57.504 | INFO     | __main__:<module>:24 - API started
+2025-05-02 02:27:10.005 | INFO     | __main__:<module>:24 - API started
+2025-05-02 02:33:46.319 | INFO     | __main__:<module>:24 - API started
+2025-05-02 02:34:58.163 | INFO     | __main__:<module>:24 - API started
+2025-05-02 02:36:42.603 | INFO     | __main__:<module>:26 - API started
+2025-05-02 02:40:38.321 | INFO     | __main__:<module>:26 - API started
+2025-05-02 02:41:04.398 | INFO     | __main__:<module>:26 - API started
+2025-05-02 03:21:59.221 | INFO     | __main__:<module>:28 - API started
+2025-05-02 03:25:43.367 | INFO     | __main__:<module>:28 - API started
+2025-05-02 03:28:17.977 | INFO     | __main__:<module>:28 - API started
+2025-05-02 03:31:00.280 | INFO     | __main__:<module>:28 - API started
+2025-05-02 03:53:52.954 | INFO     | __main__:<module>:28 - API started
+2025-05-02 03:54:37.470 | INFO     | __main__:<module>:28 - API started
+2025-05-02 03:59:01.297 | INFO     | __main__:<module>:28 - API started
+2025-05-02 03:59:51.084 | INFO     | __main__:<module>:28 - API started
+2025-05-02 04:04:06.698 | INFO     | __main__:<module>:28 - API started
+2025-05-02 04:04:59.384 | INFO     | __main__:<module>:28 - API started
+2025-05-02 07:07:12.280 | INFO     | __main__:<module>:30 - API started
+2025-05-02 07:11:06.108 | INFO     | __main__:<module>:30 - API started
+2025-05-02 07:11:48.406 | INFO     | __main__:<module>:30 - API started
+2025-05-02 07:23:52.268 | INFO     | __main__:<module>:25 - API started
+2025-05-02 07:24:31.744 | INFO     | __main__:<module>:25 - API started
+2025-05-02 07:25:07.541 | INFO     | __main__:<module>:25 - API started
+2025-05-02 07:26:51.323 | INFO     | __main__:<module>:25 - API started
+2025-05-02 07:27:29.057 | INFO     | __main__:<module>:25 - API started
+2025-05-02 07:27:59.341 | INFO     | __main__:<module>:25 - API started
+2025-05-02 07:32:23.070 | INFO     | __main__:<module>:25 - API started
+2025-05-02 09:19:35.425 | INFO     | __main__:<module>:25 - API started
+2025-05-02 09:20:15.910 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:20:41.016 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:21:21.256 | ERROR    | src.services.service:_process_report:81 - [PROCESS] OpenCV(4.11.0) :-1: error: (-5:Bad argument) in function 'resize'
+> Overload resolution failed:
+>  - Can't parse 'dsize'. Input argument doesn't provide sequence protocol
+>  - Can't parse 'dsize'. Input argument doesn't provide sequence protocol
+
+2025-05-02 09:22:12.128 | ERROR    | src.services.service:get_report:121 - [GET_REPORT] 1 validation error for ReportResponse
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=<coroutine object ReportS...by_id at 0x72e30c5c8400>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_attributes_type
+2025-05-02 09:23:40.259 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:24:03.684 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:24:35.926 | ERROR    | src.services.service:get_report:121 - [GET_REPORT] 1 validation error for ReportResponse
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=<coroutine object ReportS...by_id at 0x7968652066b0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_attributes_type
+2025-05-02 09:25:37.845 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:25:43.631 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:25:45.147 | ERROR    | src.services.service:get_report:121 - [GET_REPORT] 'NoneType' object has no attribute 'fetch_report_by_id'
+2025-05-02 09:26:18.140 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:26:24.315 | ERROR    | src.services.service:get_report:121 - [GET_REPORT] 'NoneType' object has no attribute 'fetch_report_by_id'
+2025-05-02 09:26:27.049 | ERROR    | src.services.service:get_report:121 - [GET_REPORT] 'NoneType' object has no attribute 'fetch_report_by_id'
+2025-05-02 09:26:27.809 | ERROR    | src.services.service:get_report:121 - [GET_REPORT] 'NoneType' object has no attribute 'fetch_report_by_id'
+2025-05-02 09:26:28.999 | ERROR    | src.services.service:get_report:121 - [GET_REPORT] 'NoneType' object has no attribute 'fetch_report_by_id'
+2025-05-02 09:28:24.173 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:29:08.603 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:29:10.120 | ERROR    | src.services.service:get_report:121 - [GET_REPORT] 'NoneType' object has no attribute 'fetch_report_by_id'
+2025-05-02 09:29:32.380 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:29:34.022 | ERROR    | src.services.service:get_report:121 - [GET_REPORT] 'NoneType' object has no attribute 'fetch_report_by_id'
+2025-05-02 09:34:25.218 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:34:42.146 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:34:47.183 | ERROR    | src.services.service:get_report:120 - [GET_REPORT] 'Depends' object has no attribute 'execute'
+2025-05-02 09:39:42.195 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:46:09.012 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:48:14.792 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:48:21.275 | ERROR    | src.services.service:get_report:120 - [GET_REPORT] 'Depends' object has no attribute 'execute'
+2025-05-02 09:50:59.253 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:51:17.230 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:53:23.779 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:56:17.746 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:56:33.314 | ERROR    | src.services.service:_process_report:84 - [PROCESS] Instance '<Report at 0x77dc3b5630d0>' is not persistent within this Session
+2025-05-02 09:58:12.367 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:59:26.623 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:59:40.041 | INFO     | src.main:<module>:25 - API started
+2025-05-02 09:59:55.770 | ERROR    | src.services.service:_process_report:83 - [PROCESS] Instance '<Report at 0x79c28ad71310>' is not persistent within this Session
+2025-05-02 10:04:33.523 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:05:37.568 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:06:57.180 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:08:56.477 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:09:14.999 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:09:57.147 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:10:36.187 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:12:48.517 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:25:07.337 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:27:52.136 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:28:45.656 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:29:17.439 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:29:36.879 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:30:45.583 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:31:08.388 | ERROR    | src.services.service:_process_report:64 - [PROCESS] Instance '<Report at 0x7ad8841835d0>' is not persistent within this Session
+2025-05-02 10:37:01.213 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:37:15.111 | ERROR    | src.services.service:_process_report:65 - [PROCESS] Instance '<Report at 0x7f2bf0126c90>' is not persistent within this Session
+2025-05-02 10:38:38.506 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:38:49.275 | ERROR    | src.services.service:_process_report:65 - [PROCESS] Instance '<Report at 0x739b5bce2950>' is not persistent within this Session
+2025-05-02 10:44:09.968 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:47:00.984 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:47:06.902 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:49:09.705 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:51:17.120 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:51:22.040 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:55:54.283 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:58:52.890 | INFO     | src.main:<module>:25 - API started
+2025-05-02 10:58:58.626 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:00:28.232 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:01:24.092 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:04:13.825 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:04:19.685 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:05:33.072 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:15:14.008 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:17:13.893 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:17:26.339 | ERROR    | src.services.service:_process_report:86 - [PROCESS] PredictionService.predict_fracture() missing 1 required positional argument: 'body_part'
+2025-05-02 11:17:32.816 | ERROR    | src.services.service:_process_report:86 - [PROCESS] PredictionService.predict_fracture() missing 1 required positional argument: 'body_part'
+2025-05-02 11:18:11.611 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:18:17.766 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:18:24.569 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:21:29.391 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:22:03.719 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:22:29.659 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:24:51.842 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:25:51.026 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:25:57.130 | INFO     | src.main:<module>:25 - API started
+2025-05-02 11:26:33.607 | INFO     | src.main:<module>:25 - API started
+2025-05-02 12:53:21.084 | INFO     | src.main:<module>:24 - API started
+2025-05-02 12:53:38.513 | INFO     | src.main:<module>:24 - API started
+2025-05-02 12:54:02.273 | INFO     | src.main:<module>:24 - API started
+2025-05-02 12:55:34.399 | INFO     | src.main:<module>:24 - API started
+2025-05-02 12:55:43.745 | ERROR    | src.services.service:get_prediction_report:95 - [GET_REPORT] 1 validation error for ReportCompleteResponse
+status_code
+  Field required [type=missing, input_value=<Report(id=1f9e7a45-ffe4-...ror=, status=Completed)>, input_type=Report]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 14:33:34.473 | INFO     | src.main:<module>:24 - API started
+2025-05-02 14:33:51.553 | ERROR    | src.services.service:predict:45 - [PREDICT] [Errno -3] Temporary failure in name resolution
+2025-05-02 14:37:52.322 | ERROR    | src.services.service:get_prediction_report:95 - [GET_REPORT] 1 validation error for ReportCompleteResponse
+status_code
+  Field required [type=missing, input_value=<Report(id=a78655fb-8f2b-...alid, status=Completed)>, input_type=Report]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 14:41:41.800 | INFO     | src.main:<module>:24 - API started
+2025-05-02 14:42:43.468 | INFO     | src.main:<module>:24 - API started
+2025-05-02 14:50:50.286 | INFO     | src.main:<module>:24 - API started
+2025-05-02 14:52:14.510 | INFO     | src.main:<module>:24 - API started
+2025-05-02 14:54:04.528 | INFO     | src.main:<module>:24 - API started
+2025-05-02 14:55:37.001 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:09:15.741 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:14:25.138 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:31:57.719 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:44:52.612 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:44:58.724 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:45:39.832 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:47:34.528 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:49:48.666 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:49:53.752 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:51:06.415 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:53:08.701 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:53:50.878 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:54:04.939 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:57:49.551 | INFO     | src.main:<module>:24 - API started
+2025-05-02 15:59:09.025 | INFO     | src.main:<module>:24 - API started
+2025-05-02 16:02:03.207 | INFO     | src.main:<module>:24 - API started
+2025-05-02 16:15:13.419 | INFO     | src.main:<module>:35 - API started
+2025-05-02 16:29:21.558 | INFO     | src.main:<module>:36 - API started
+2025-05-02 16:32:32.505 | INFO     | src.main:<module>:36 - API started
+2025-05-02 16:32:54.221 | INFO     | src.main:<module>:36 - API started
+2025-05-02 16:33:09.607 | INFO     | src.main:<module>:36 - API started
+2025-05-02 16:36:52.361 | INFO     | src.main:<module>:36 - API started
+2025-05-02 16:38:17.157 | INFO     | src.main:<module>:36 - API started
+2025-05-02 16:41:25.457 | INFO     | src.main:<module>:36 - API started
+2025-05-02 16:41:35.005 | INFO     | src.main:<module>:36 - API started
+2025-05-02 16:41:53.602 | INFO     | src.main:<module>:36 - API started
+2025-05-02 16:42:33.463 | INFO     | src.main:<module>:36 - API started
+2025-05-02 16:45:34.469 | INFO     | src.main:<module>:36 - API started
+2025-05-02 16:46:19.877 | INFO     | src.main:<module>:36 - API started
+2025-05-02 16:48:34.152 | INFO     | src.main:<module>:36 - API started

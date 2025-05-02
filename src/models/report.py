@@ -3,6 +3,11 @@ from sqlalchemy import Column, String, Float, DateTime
 from sqlalchemy.dialects.postgresql import UUID
 from uuid import uuid4
 
+from uuid import uuid4
+from sqlalchemy import Column, String, DateTime, Float
+from sqlalchemy.dialects.postgresql import UUID
+from datetime import datetime
+
 class Report(Base):
     __tablename__ = 'reports'
 
@@ -16,4 +21,11 @@ class Report(Base):
     prediction = Column(String, nullable=False)
     fracture_confidence = Column(Float, nullable=True)
     error = Column(String, nullable=True)
-    status = Column(String, default='In Progress') 
+    status = Column(String, default='In Progress')
+
+    def __repr__(self):
+        return (f"<Report(id={self.id}, filename={self.filename}, format={self.format}, "
+                f"received_time={self.received_time}, model_time_seconds={self.model_time_seconds}, "
+                f"body_part={self.body_part}, confidence={self.confidence}, prediction={self.prediction}, "
+                f"fracture_confidence={self.fracture_confidence}, error={self.error}, status={self.status})>")
+ 

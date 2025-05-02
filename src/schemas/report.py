@@ -1,7 +1,8 @@
 from pydantic import BaseModel
-from typing import Optional, TypeVar, Generic
+from typing import Optional
 from datetime import datetime
 from uuid import UUID
+from src.schemas.services_schema import APIResponse
 
 class ReportBase(BaseModel):
     id: Optional[UUID]
@@ -12,9 +13,7 @@ class ReportBase(BaseModel):
         from_attributes = True
         validate_by_name = True
         allow_arbitrary_types = True
-        json_encoders = {
-            UUID: lambda v: str(v)  
-        }
+        
 
 class ReportCreate(ReportBase):
     filename: Optional[str] = None
@@ -28,23 +27,8 @@ class ReportCreate(ReportBase):
     error: Optional[str] = None
 
 class ReportResponse(ReportBase):
-    class Config:
-        json_encoders = {
-            UUID: lambda v: str(v)  
-        }
+    pass
 
-T = TypeVar("T")
-
-
-
-
-
-class APIResponse(BaseModel, Generic[T]):
-    error_message: Optional[str] = None
-    is_success: bool = False
-    status_code: str
-    data: Optional[T] = None
-    class Config:
-        json_encoders = {
-            UUID: lambda v: str(v)  
-        }
+# Correct inheritance
+class ReportCompleteResponse(ReportCreate):
+    pass

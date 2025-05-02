@@ -5,7 +5,11 @@
         "imdecode",
         "IMREAD",
         "jsonable",
+        "Mura",
+        "ndarray",
         "nparr",
-        "sessionmaker"
+        "redoc",
+        "sessionmaker",
+        "slowapi"
     ]
 }
